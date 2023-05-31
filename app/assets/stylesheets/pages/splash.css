@@ -1,0 +1,42 @@
+.splash__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: var(--color-black-light);
+}
+
+.splash__title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.splash__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.splash__buttons button {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova', sans-serif;
+  border: none;
+}
+
+.button__signin {
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 100;
+}
+
+.button__signup {
+  background: none;
+  color: var(--color-black-mid);
+  font-weight: 100;
+}

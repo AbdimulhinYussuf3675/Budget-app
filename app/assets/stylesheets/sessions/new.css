@@ -1,0 +1,94 @@
+.container {
+  background-color: var(--color-black-light);
+  height: 100vh;
+}
+
+.login__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: var(--color-blue);
+  color: #fff;
+  z-index: 2;
+}
+
+.login__header h2 {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.fa-arrow-left {
+  font-size: 1.4rem;
+}
+
+.new_user {
+  position: absolute;
+  padding-top: 4rem;
+  width: 100%;
+  top: 0;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.field input[type=email],
+.field input[type=password] {
+  flex: 2;
+  padding: 1rem;
+  border: 1px solid var(--color-black-light);
+}
+
+.field input[type=checkbox] {
+  margin-right: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.submit-btn {
+  width: auto;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.9rem;
+  background: none;
+  color: #fff;
+  text-transform: capitalize;
+  z-index: 2;
+}
+
+.links {
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-black-mid);
+}
+
+.remember-me {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-black-mid);
+}
+
+.container a {
+  font-size: 1rem;
+}
+
+.alert-danger {
+  font-size: 1rem;
+  color: #fff;
+  background-color: red;
+  padding: 1rem;
+  width: 100%;
+}
