@@ -1,5 +1,64 @@
-<h1>Hello operations</h1>
+<div class="container">
+  <div class="operation__header">
+    <%= link_to groups_path do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+    <h1 class="operation__title"> Operations </h1>
+    <%= link_to destroy_user_session_path do %>
+      <i class="fas fa-sign-out-alt"></i>
+    <% end %>
+  </div>
 
-<%= link_to destroy_user_session_path, method: :delete do %>
-  <i class="fas fa-arrow-left"></i>
-<% end %>
+  <div class="operations__container">
+
+    <div class="operations__info">
+      <img src=<%= @group.icon %>>
+      <span><%= @group.name %></span>
+    </div>
+
+    <div class="operations__info">
+      <p>Total Amount: </p>
+      <span>$<%= @group.total_spent %></span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>Operation</td>
+          <td>Date</td>
+          <td>Name</td>
+          <td>Cost</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% if @operations.empty? %>
+          <tr>
+            <td>
+              <img src="https://cdn2.iconfinder.com/data/icons/ecommerce-filled-outline-1/32/Ecommerce-shopping-sale-transaction_28-512.png" alt="transaction icon">
+            </td>
+            <td>No operations found</td>
+          </tr>
+        <% end %>
+
+        <% @operations.each do |operation| %>
+          <tr>
+            <td>
+              <img src="https://cdn2.iconfinder.com/data/icons/ecommerce-filled-outline-1/32/Ecommerce-shopping-sale-transaction_28-512.png" alt="transaction icon">
+            </td>
+            <td><%= operation.created_at %></td>
+            <td><%= operation.name %></td>
+            <td><%= operation.amount %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="add__section">
+    <%= link_to new_group_operation_path do %>
+      <button class="operation__add">Add new operation</button>
+    <% end %>
+  </div>
+  
+  
+</div>
