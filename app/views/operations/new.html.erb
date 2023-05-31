@@ -1,0 +1,46 @@
+<div class="operation__header">
+  <%= link_to groups_path do %>
+    <i class="fas fa-arrow-left"></i>
+  <% end %>
+  <h1 class="operation__title">Add Operation</h1>
+  <%= link_to destroy_user_session_path do %>
+    <i class="fas fa-sign-out-alt"></i>
+  <% end %>
+</div>
+
+
+<div class="operation__container">
+  <%= form_for @operation, url: group_operations_path do |f| %>
+
+    <div class="operation__body">
+      <div class="form-group">
+        <%= f.label :name, class: "form-label" %><br/>
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control" %>
+      </div>
+
+      <div class="form-group ">
+        <%= f.label :amount, class: "form-label" %><br/>
+        <%= f.text_field :amount, autocomplete: "amount", class: "form-control" %>
+      </div>
+
+      <% if @groups.any? %>
+        <div class="form-group ">
+          <%= f.label :categories, class: "form-label" %><br/>
+          <%= select_tag :groups, options_for_select(@groups.map { |s| [s.name, s.id] }), multiple: true, size: 3 %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="operation__footer">
+      <%= f.submit "Add new operation", class: "btn btn-primary" %>
+    </div>
+
+    <% if flash[:error].present? %>
+      <div class="alert alert-danger" role="alert">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
+  <% end %>
+
+
+</div>
