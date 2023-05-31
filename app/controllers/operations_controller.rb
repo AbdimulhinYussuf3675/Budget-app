@@ -1,7 +1,7 @@
 class OperationsController < ApplicationController
   def index
     @group = Group.find_by(user: current_user, id: params[:group_id])
-    @operations = @group.operations
+    @operations = @group.operations.order(created_at: :desc)
   end
 
   def new
