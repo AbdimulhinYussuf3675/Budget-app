@@ -1,0 +1,87 @@
+.container {
+  background-color: var(--color-black-light);
+  min-height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+table tr td {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table thead {
+  font-size: 1.2rem;
+}
+
+table tbody {
+  font-size: 1rem;
+}
+
+td img {
+  width: 50%;
+}
+
+.operation__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: var(--color-blue);
+  color: #fff;
+  z-index: 2;
+}
+
+.operation__title {
+  font-size: 1.6rem;
+  flex: 1;
+  text-align: center;
+}
+
+.fa-sign-out-alt,
+.fa-arrow-left {
+  font-size: 1.6rem;
+}
+
+.operations__container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.operations__info {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  align-items: center;
+}
+
+.operations__info img {
+  width: 20%;
+}
+
+.operation__add {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #fff;
+  background: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.add__section {
+  padding: 1rem;
+  background-color: var(--color-green);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
