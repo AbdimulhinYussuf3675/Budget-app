@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="categorie__header">
+    <%= link_to groups_path do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+    <h1 class="categorie__title">Add Categorie</h1>
+    <%= link_to destroy_user_session_path do %>
+      <i class="fas fa-sign-out-alt"></i>
+    <% end %>
+  </div>
+
+
+  <div class="categorie__container">
+    <%= form_for @category, url: groups_path do |f| %>
+
+      <div class="categorie__body">
+        <div class="form-group">
+          <%= f.text_field :name, autofocus: true, placeholder:'Name', autocomplete: "name", class: "form-control" %>
+        </div>
+
+        <div class="form-group ">
+          <%= f.text_field :icon, placeholder:'Icon', autocomplete: "icon", class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="categorie__footer">
+        <%= f.submit "Add new category", class: "btn btn-primary" %>
+      </div>
+    
+      <% if flash[:error].present? %>
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:error] %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
