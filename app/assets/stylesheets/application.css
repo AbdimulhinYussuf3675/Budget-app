@@ -1,33 +1,32 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --color-blue: #3778c2;
-    --color-green: #5fb523;
-    --color-black: #434b54;
-    --color-black-light: #434b541a;
-    --color-black-mid: #434b54d6;
-  }
-  
-  @font-face {
-    font-family: 'ProximaNova';
-    src: url('ProximaNovaFont.otf');
-  }
-  
-  body {
-    font-family: 'ProximaNova', sans-serif;
-    font-size: 62.5%;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue: #3778c2;
+  --color-green: #5fb523;
+  --color-black: #434b54;
+  --color-black-light: #434b541a;
+  --color-black-mid: #434b54d6;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('ProximaNovaFont.otf');
+}
+
+body {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
