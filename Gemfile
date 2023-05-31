@@ -75,5 +75,6 @@ end
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'devise'
+gem 'rails-controller-testing'
 
 gem 'letter_opener'
