@@ -4,9 +4,11 @@
     <%= link_to groups_path do %>
       <i class="fas fa-arrow-left"></i>
     <% end %>
-    <h1 class="categorie__title">Add Categorie</h1>
-    <%= link_to destroy_user_session_path do %>
-      <i class="fas fa-sign-out-alt"></i>
+    <h1 class="categorie__title">Add category</h1>
+     <% if user_signed_in? %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete, id: "icon2", class: "fas fa-sign-out-alt" %>
+    <% else %>
+    <%= button_to "Sign In", new_user_session_path, class: "nav-btn"  %>
     <% end %>
   </div>
 

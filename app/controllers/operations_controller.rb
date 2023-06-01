@@ -18,7 +18,6 @@ class OperationsController < ApplicationController
     end
     # @groups = Group.all.where(user: current_user)
     @operation.author = current_user
-    puts @operation.groups
     if @operation.save
       redirect_to group_operations_path
       flash[:notice] = 'Operation created successfully'
