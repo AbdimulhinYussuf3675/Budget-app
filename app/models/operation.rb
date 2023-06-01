@@ -5,7 +5,7 @@ class Operation < ApplicationRecord
 
   validates :name, presence: true
   validates :amount, presence: true,
-                     numericality: { only_integer: true, greater_than_or_equal_to: 0,
+                     numericality: { greater_than_or_equal_to: 0,
                                      message: 'Please enter a valid number' }
   validates :groups, presence: { message: 'Must have at least one category' }, length: { minimum: 1 }
 end
