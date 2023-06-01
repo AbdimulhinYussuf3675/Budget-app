@@ -1,4 +1,16 @@
-<h1>Budget It</h1>
+<%= stylesheet_link_tag 'pages/splash', media: 'all' %>
 
-<%= link_to 'Sign In', new_user_session_path %>
-<%= link_to 'Sign Up', new_user_registration_path %>
+<div class="splash__container">
+
+  <h1 class="splash__title">Budget It</h1>
+
+  <div class="splash__buttons">
+    <%= link_to new_user_session_path do %>
+      <button class="button__signin">Sign In</button>
+    <% end %>
+    <%= link_to new_user_registration_path do %>
+      <button class="button__signup">Sign Up</button>
+    <% end %>
+  </div>
+
+</div>

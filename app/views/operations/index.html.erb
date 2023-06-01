@@ -5,9 +5,12 @@
       <i class="fas fa-arrow-left"></i>
     <% end %>
     <h1 class="operation__title"> Operations </h1>
-    <%= link_to destroy_user_session_path do %>
-      <i class="fas fa-sign-out-alt"></i>
+    <% if user_signed_in? %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete, id: "icon2", class: "fas fa-sign-out-alt" %>
+    <% else %>
+    <%= button_to "Sign In", new_user_session_path, class: "nav-btn"  %>
     <% end %>
+
   </div>
 
   <div class="operations__container">
