@@ -32,7 +32,7 @@
 
 # 📖<a name="about-project">Budget App</a>
 
-> "Budget App"  is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+> "Budget App"  is a mobile web application where users can manage your budget: you have a list of transactions associated with a category, so that users can see how much money they spent and on what.
 
 <br/>
 
@@ -69,7 +69,7 @@
 
 </br>
 
-## 📹 [video presentation]()
+## 📹 [video presentation](https://drive.google.com/file/d/1aRpppoBC4nVBg6iR4VZo6LaX34jCnjJj/view?usp=sharing)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
