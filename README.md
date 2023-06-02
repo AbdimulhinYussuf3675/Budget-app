@@ -64,6 +64,8 @@
 
 
 ### Take a look at project's [Live Demo](https://budgetapp-7px9.onrender.com/)
+<h3>NB: Sorry the sign up function is working but you can't receive an email currently to confirm your account on . </h3>
+
 
 </br>
 
