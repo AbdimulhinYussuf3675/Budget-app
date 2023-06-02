@@ -63,7 +63,7 @@
 ## 🚀 Project documentation 
 
 
-### Take a look at project's [Live Demo](https://budgetapp-7px9.onrender.com/)
+### Take a look at project's [Live Demo](https://budgetapp-os5q.onrender.com/)
 <h3>NB: Sorry the sign up function is working but you can't receive an email currently to confirm your account on . </h3>
 
 
@@ -149,6 +149,10 @@ If you like the project, give it a star ⭐️
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for the project.
+Thank you [Gregoire Vella](https://www.behance.net/gregoirevella) for your wonderful [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=&)
+
 
 I would like to thank...
 [Microverse](https://www.microverse.org/) for the oppotunity
