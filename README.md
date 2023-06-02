@@ -63,13 +63,11 @@
 ## 🚀 Project documentation 
 
 
-### Take a look at project's Live Demo [comming soon]()
+### Take a look at project's [Live Demo](https://budgetapp-7px9.onrender.com/)
 
 </br>
 
-## 📹 video presentation <a name="video-presentation"></a>
-
-- <a href="">Video presentation link</a>
+## 📹 [video presentation]()
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
