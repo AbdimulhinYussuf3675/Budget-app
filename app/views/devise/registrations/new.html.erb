@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag 'registrations/new', media: 'all' %>
+<div class="container">
+  <div class="register__header">
+    <%= link_to unauthenticated_root_path do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+    <h2>Register</h2>
+  </div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+   <div class="field">
+    <%= f.text_field :name, placeholder: 'Name', class:'field__input', autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.email_field :email, placeholder: 'Email', class:'field__input', autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, placeholder: 'Password', class:'field__input', autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, class:'field__input', placeholder: 'Password Confirmation', autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "SignUp", class:'submit-btn' %>
+  </div>
+<% end %>
+
+  <div class="links">
+    <%= render "devise/shared/links" %>
+    <% if flash[:error] %>
+      <div class="alert alert-danger">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
+  </div>
+</div>

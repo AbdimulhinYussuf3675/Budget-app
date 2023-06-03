@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag 'groups/index', media: 'all' %>
+<div class="container">
+  <div class="categorie__header">
+    <h1 class="categorie__title"> Categories </h1>
+    <% if user_signed_in? %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete, id: "icon2", class: "fas fa-sign-out-alt" %>
+    <% else %>
+    <%= button_to "Sign In", new_user_session_path, class: "nav-btn"  %>
+    <% end %>
+  </div>
+
+  <div class="categories__container">
+    <% @categories.each do |category| %>
+      <%= link_to group_operations_path(category.id) do %>
+        <div class="categorie__item">
+          <img src=<%= category.icon %> alt=<%= category.name %>>
+          <h2><%= category.name %></h2>
+          <p>Total spent:$<span><%= category.total_spent %></span></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="add__section">
+    <%= link_to new_group_path do %>
+      <button class="categorie__add">Add new Category</button>
+    <% end %>
+  </div>
+</div>

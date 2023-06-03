@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'pages/splash', media: 'all' %>
+
+<div class="splash__container">
+
+  <h1 class="splash__title">Welcome to Adam-Budget</h1>
+
+  <div class="splash__buttons">
+    <%= link_to new_user_session_path do %>
+      <button class="button__signin">Sign In</button>
+    <% end %>
+    <%= link_to new_user_registration_path do %>
+      <button class="button__signup">Sign Up</button>
+    <% end %>
+  </div>
+
+</div>
